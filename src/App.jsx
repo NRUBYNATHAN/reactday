@@ -30,7 +30,7 @@ export default function App(){
 function Ruby({name,pic,location}){
 return (
   <div  className="main">
-    <p>hello <span className="sp">{name}</span> welcome to website❤️❤️🎉🎉</p>
+    <p>hello <span className="sp">{name}</span> welcome to website❤️❤️🎉🎉😘😘</p>
     <img className="pic" src={pic} alt={name}/>
     <p>he is come from {location}</p>
   </div>
