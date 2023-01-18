@@ -20,3 +20,19 @@
   justify-content: space-around;
  
 }
+.like{
+  background-color: chartreuse;
+  color:black;
+  border: 1px solid white;
+  width:60px;
+  height:40px;
+  border-radius: 10%;
+}
+.dislike{
+  background-color: chartreuse;
+  color:black;
+  border: 1px solid white;
+  width:60px;
+  height:40px;
+  border-radius: 10%;
+}

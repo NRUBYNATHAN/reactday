@@ -1,6 +1,7 @@
 
 
 import "./App.css"
+import { useState } from "react";
 
 export default function App(){
  
@@ -22,10 +23,11 @@ export default function App(){
     <div className="app">
       {/* assign map method for looping  */}
        {arr.map((call)=> ( <Ruby name={call.name} pic={call.pic} location={call.location} /> ))}
-    </div>
+      </div>
   );
 
 }
+
 
 function Ruby({name,pic,location}){
 return (
@@ -33,6 +35,20 @@ return (
     <p>hello <span className="sp">{name}</span> welcome to website❤️❤️🎉🎉😘😘</p>
     <img className="pic" src={pic} alt={name}/>
     <p>he is come from {location}🤷‍♀️</p>
+
+    {<Counter />}
   </div>
 );
+}
+
+function Counter(){
+  const [sum,setLike]=useState(0)
+  const [dissum,setDisLike]=useState(0)
+  return(
+    <div>
+      <button className="like" onClick={()=> setLike(sum + 1) }>👍{sum}</button>
+      <button className="dislike" onClick={()=> setDisLike(dissum + 1) }>👎{dissum}</button>
+      <p></p>
+    </div>
+  );
 }
