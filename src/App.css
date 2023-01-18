@@ -1,0 +1,22 @@
+.sp{
+  color:blueviolet;
+}
+.main{
+ 
+  text-align: center;
+  font-size:20px;
+  background-color: rgb(221, 131, 131);
+  padding: 20px;
+}
+.pic{
+  border:3px dotted rgb(11, 11, 11);
+  width:300px;
+  height:300px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.app{
+  display: flex;
+  justify-content: space-around;
+ 
+}
